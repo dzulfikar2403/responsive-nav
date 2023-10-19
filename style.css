@@ -74,6 +74,16 @@ nav ul li a:hover{
   background-color: rgb(25, 73, 195);
 }
 
+.kotak3{
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 180px;
+  height: 200px;
+  max-width: 200px;
+  background-color: rgb(195, 25, 175);
+}
+
 /* tablet */
 @media screen and (max-width:768px){
   nav ul{
@@ -85,6 +95,10 @@ nav ul li a:hover{
 @media screen and (max-width:576px){
   nav ul{
     display: none;
+  }
+
+  .nav{
+    height: 100%;
   }
 
   .menu-toggle{
@@ -104,9 +118,12 @@ nav ul li a:hover{
 
 .isi-toggle{
   display: none;
+  position: fixed;
+  right: 0;
+  z-index: 2;
   width: 30%;
   height: 100%;
-  background-color: teal;
+  background-color: rgb(16, 108, 108);
   float: right;
   animation-name: test;
   animation-duration: .3s;
