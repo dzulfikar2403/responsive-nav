@@ -15,6 +15,7 @@ nav{
   top: 0;
   right: 0;
   left: 0;
+  z-index: 99;
   background-color: teal;
   justify-content: space-around;
   padding: 15px 0;
@@ -55,8 +56,9 @@ nav ul li a:hover{
 
 .kotak{
   display: flex;
-  align-items: center;
-  margin: 100px auto;
+  margin: auto;
+  position: relative;
+  top: 80px;
   height: 200px;
   max-width: 200px;
   background-color: red;
@@ -64,8 +66,9 @@ nav ul li a:hover{
 
 .kotak2{
   display: flex;
-  align-items: center;
-  margin: 80px auto;
+  margin: auto;
+  position: relative;
+  top: 120px;
   height: 200px;
   max-width: 200px;
   background-color: rgb(25, 73, 195);
@@ -102,7 +105,7 @@ nav ul li a:hover{
 .isi-toggle{
   display: none;
   width: 30%;
-  height: 100vh;
+  height: 100%;
   background-color: teal;
   float: right;
   animation-name: test;
@@ -115,11 +118,15 @@ nav ul li a:hover{
   flex-direction: column;
   list-style: none;
   margin-top: 20%;
+  transform: translateX(25px);
   gap: 2em;
+  position: fixed;
+  
 }
 
 
 .isi-toggle ol a{
+  /* top: 90; */
   text-decoration: none;
   color: rgb(61, 193, 193);
 }
