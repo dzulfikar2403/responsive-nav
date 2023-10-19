@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  height: 200vw;
+}
+
+/* navbar */
+nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: teal;
+  justify-content: space-around;
+  padding: 15px 0;
+  color: rgb(136, 226, 226);
+}
+
+nav.logo{
+  font-family: 'Pixelify Sans', sans-serif; 
+  letter-spacing: 2px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: rgb(136, 226, 226);
+  font-size: 0.8em;
+  padding-bottom: 2px;
+}
+
+nav ul li a:hover{
+  border-bottom: 2px solid rgb(136, 226, 226);
+  color: rgb(154, 231, 189);
+}
+
+.menu-toggle2{
+  display: none;
+}
+
+.isi-toggle{
+  display: none;
+}
+
+.kotak{
+  display: flex;
+  align-items: center;
+  margin: 100px auto;
+  height: 200px;
+  max-width: 200px;
+  background-color: red;
+}
+
+.kotak2{
+  display: flex;
+  align-items: center;
+  margin: 80px auto;
+  height: 200px;
+  max-width: 200px;
+  background-color: rgb(25, 73, 195);
+}
+
+/* tablet */
+@media screen and (max-width:768px){
+  nav ul{
+    width: 55%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width:576px){
+  nav ul{
+    display: none;
+  }
+
+  .menu-toggle{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-toggle span{
+  background-color: rgb(59, 244, 198);
+  width: 25px;
+  height: 3px;
+}
+
+.isi-toggle{
+  display: none;
+  width: 30%;
+  height: 100vh;
+  background-color: teal;
+  float: right;
+  animation-name: test;
+  animation-duration: .3s;
+}
+
+.isi-toggle ol{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 20%;
+  gap: 2em;
+}
+
+
+.isi-toggle ol a{
+  text-decoration: none;
+  color: rgb(61, 193, 193);
+}
+
+
+}
+
+@keyframes test{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 30%;
+  }
+}
